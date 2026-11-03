@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mensajes que se convierten en citas · vettta</title>
+<meta name="description" content="Respuestas de WhatsApp para cada etapa de la conversación con un paciente: primer contacto, precio, objeciones, cierre y seguimiento.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACdElEQVR42sWXy0tUcRTHP+d3H/PQyVGTkYkyJFArcDPQA4yoReAiV0UQtGvbtm1/QH9Dy6Cghbt2gasWCe2ktAJF0UxjHGfGO/dxWjiKTmndoTv+lvfx+35+5/E75wh/WCOlKSWB9enDtLQ+k04IHwdiOi3eqmU6Ld4KYeL8JCIggtPdy9m7T7AyuaYfpW0QE+f0ioAqveO3yQ1donjrEcZNoyjtMIyUpjSWBdCIbPEC+bFr1NYXyRSHOXPnMVY2t2ei+BaI5QLLpq80CUAq108U+FjZbuxsHrQtfew4Hw9cmaLn/GWqKwtsL85R+TKLt7FywECaLABRwLc3z6ktfwYgPXCOwRsPwLZZfffykKsSAfj+fho3X6C/NEn30EXcfAE73UV1eT6WaNsAhYl75MeuAxA2dgjq24Q7VSSVoTBxH0QIqmU2Zt8mA+D0DhL6dUJvBxGDmN0Ytt0MPaNXERGi0E8OQMMAMIiYQyGvGuHXysm7QP72TgCxEsyCI9UNxnIACBr1zgGoKpbj0tjaYG3mNWhI5PudtICCGKLAw/ux1F4x+j/FdTcjRASJueV/AlBo3sIasyDES0M5slFA92/CMEGAMPqtQYkCDzfXR254HL+yiXHT1JbnEwLwPUQERZtdkDTLsMXgzYdoFCLGMP/iaTIx0Pi5ihgLVFvSMSLwqkT+DoFXSy4ItxZm8evbWG4G1RCIDrjD0E5fFgvAL6+zNvMKDSOc9CnEOIc3c1LYqa5YANbp4uizOF2xX16nujSH2A7GzWBsBxA0UoLKJpWvH/cbln+uLycxF+xNSIYTXuaoobFT86E5bnLtxHAqJz2e/wKKxunWqWsBuQAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── Colores de la marca (iguales a la calculadora) ── */
+:root {
+  --navy:    #27344F;
+  --montana: #2E3C58;
+  --azul:    #4990D0;
+  --verde:   #B7E59B;
+  --rosa:    #D6647C;
+  --lavanda: #8C91C2;
+
+  --bg:      #FFFFFF;
+  --surface: #F3F4F9;
+  --text:    #27344F;
+  --muted:   #5A6582;
+  --line:    #DDE0EC;
+  --chip:    #E6E7F3;
+  --chip-text: #3F4577;
+  --punto:   #27344F;
+  --on-dark: #FFFFFF;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:      #1C2639;
+    --surface: #24304A;
+    --text:    #EEF0F6;
+    --muted:   #AEB6CC;
+    --line:    #36435F;
+    --chip:    #3A4268;
+    --chip-text: #D9DBF0;
+    --punto:   #4990D0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:      #1C2639;
+  --surface: #24304A;
+  --text:    #EEF0F6;
+  --muted:   #AEB6CC;
+  --line:    #36435F;
+  --chip:    #3A4268;
+  --chip-text: #D9DBF0;
+  --punto:   #4990D0;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 4.5rem); }
+body {
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* ── Encabezado con montañas ── */
+.top {
+  background: #FFFFFF;
+  color: var(--navy);
+  position: relative;
+  padding: 2.25rem 1.25rem 5.5rem;
+  overflow: hidden;
+}
+.top-inner { max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+.logo-link { display: inline-block; margin-bottom: 2.25rem; }
+.logo { height: 40px; width: auto; display: block; }
+.top h1 {
+  font-size: clamp(2.1rem, 7vw, 3.3rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  max-width: 13ch;
+  margin-bottom: 1rem;
+}
+.top p { color: #5A6582; max-width: 48ch; }
+.ridge { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 70px; display: block; }
+
+main { max-width: 720px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+
+/* ── Datos de la clínica ── */
+.datos-clinica {
+  margin-top: -2.5rem; position: relative; z-index: 2;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 18px;
+  padding: 1.5rem 1.25rem;
+}
+.datos-clinica h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: .25rem; }
+.datos-clinica > p { color: var(--muted); font-size: .95rem; margin-bottom: 1.1rem; }
+.campos { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; }
+.campos label { display: grid; gap: .3rem; font-weight: 600; font-size: .92rem; }
+.campos input {
+  font: inherit; font-weight: 400; color: var(--text); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 12px; padding: .65rem .8rem; width: 100%;
+}
+.campos input:focus { outline: none; border-color: var(--azul); }
+.campos .full { grid-column: 1 / -1; }
+
+/* ── Mapa de etapas (navegación fija) ── */
+.ruta {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--bg);
+  padding: calc(env(safe-area-inset-top, 0px) + .75rem) 0 .75rem;
+  margin-top: 2.25rem;
+  border-bottom: 1px solid var(--line);
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 30; background: var(--bg);
+}
+.ruta ol {
+  list-style: none; display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none;
+}
+.ruta ol::-webkit-scrollbar { display: none; }
+.ruta a {
+  display: flex; align-items: center; gap: .45rem; white-space: nowrap;
+  text-decoration: none; color: var(--muted); font-size: .9rem; font-weight: 500;
+  padding: .35rem .75rem .35rem .35rem; border-radius: 999px; border: 1.5px solid transparent;
+}
+.ruta a span {
+  width: 1.55rem; height: 1.55rem; border-radius: 50%; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem; font-weight: 700; background: var(--chip); color: var(--chip-text);
+}
+.ruta a.activa { color: var(--text); border-color: var(--line); }
+.ruta a.activa span { background: var(--punto); color: #fff; }
+.ruta a.bloq span::after { content: ""; }
+
+/* ── Etapas: la conversación como recorrido ── */
+.etapa { position: relative; padding: 2.5rem 0 1rem 3.25rem; }
+.etapa::before {
+  content: ""; position: absolute; left: 1.05rem; top: 2.5rem; bottom: -2.5rem;
+  width: 2px; background: var(--line);
+}
+.etapa:last-of-type::before { bottom: 1rem; }
+.etapa-num {
+  position: absolute; left: 0; top: 2.35rem;
+  width: 2.2rem; height: 2.2rem; border-radius: 50%;
+  background: var(--punto); color: #fff; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.etapa h2 { font-size: 1.55rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; }
+.objetivo { color: var(--muted); margin-top: .3rem; max-width: 52ch; }
+.evita {
+  margin-top: .9rem; font-size: .92rem; padding: .6rem .85rem; border-radius: 10px;
+  background: rgba(214,100,124,0.10); color: var(--text);
+}
+.evita strong { color: var(--rosa); font-weight: 600; }
+
+.item { margin-top: 1.75rem; }
+.item h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: .45rem; }
+.dice { font-size: .95rem; color: var(--muted); margin-bottom: .55rem; }
+.dice q { color: var(--text); font-weight: 500; quotes: "«" "»"; }
+.respuesta {
+  background: var(--surface); border-left: 4px solid var(--verde);
+  border-radius: 4px 12px 12px 4px; padding: .85rem 1rem;
+  white-space: pre-line;
+}
+.alt-label { font-size: .88rem; color: var(--muted); margin: .7rem 0 .35rem; }
+.pie { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; margin-top: .55rem; }
+.porque { font-size: .9rem; color: var(--muted); flex: 1 1 18rem; }
+.botones { display: flex; gap: .4rem; }
+
+.hueco {
+  background: var(--chip); color: var(--chip-text); border-radius: 6px;
+  padding: 0 .3rem; font-size: .93em;
+}
+.lleno { font-weight: 600; }
+
+.copiar {
+  font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer;
+  background: transparent; color: var(--text);
+  border: 1.5px solid var(--line); border-radius: 999px; padding: .35rem .9rem;
+}
+.copiar:hover { border-color: var(--azul); }
+.copiar.ok { border-color: var(--verde); background: var(--verde); color: #27344F; }
+
+/* Etapa bloqueada: solo se ve el inicio */
+.etapa.bloqueada { max-height: 22rem; overflow: hidden; -webkit-mask-image: linear-gradient(#000 45%, transparent); mask-image: linear-gradient(#000 45%, transparent); }
+.etapa.bloqueada .item { filter: blur(5px); user-select: none; pointer-events: none; }
+
+/* ── Formulario y cierre ── */
+.cta { margin-top: 2.5rem; background: var(--navy); color: var(--on-dark); border-radius: 20px; padding: 2rem 1.4rem; }
+#desbloquear { margin-top: 0; }
+.cta h2 { font-size: 1.6rem; font-weight: 600; line-height: 1.15; margin-bottom: .6rem; letter-spacing: -0.01em; }
+.cta > p { color: rgba(255,255,255,0.75); margin-bottom: 1.4rem; max-width: 48ch; }
+.cta ol { list-style: none; counter-reset: s; margin-bottom: 1.6rem; display: grid; gap: .8rem; }
+.cta li { counter-increment: s; display: grid; grid-template-columns: 2rem 1fr; gap: .6rem; align-items: start; color: rgba(255,255,255,0.88); }
+.cta li::before {
+  content: counter(s); font-weight: 700;
+  width: 2rem; height: 2rem; border-radius: 50%; background: var(--verde); color: var(--navy);
+  display: flex; align-items: center; justify-content: center; font-size: .95rem;
+}
+.cta-btn {
+  display: inline-block; background: #fff; color: var(--navy); text-decoration: none;
+  font-weight: 700; font-size: 1.05rem; padding: .95rem 1.6rem; border-radius: 999px;
+}
+.cta-btn:hover { background: var(--verde); }
+.cta small { display: block; margin-top: .9rem; color: rgba(255,255,255,0.55); font-size: .85rem; }
+
+.datos form { display: grid; gap: .9rem; }
+.datos label { display: grid; gap: .35rem; font-weight: 600; color: #fff; }
+.datos label span { font-weight: 400; color: rgba(255,255,255,0.6); }
+.datos input[type=text], .datos input[type=tel], .datos input[type=email] {
+  font: inherit; font-weight: 400; padding: .75rem .9rem; border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.08); color: #fff;
+}
+.datos input:focus { outline: none; border-color: var(--verde); }
+.datos .check { display: flex; gap: .6rem; align-items: flex-start; font-weight: 400; color: rgba(255,255,255,0.85); }
+.datos .check input { margin-top: .3rem; width: 1.1rem; height: 1.1rem; accent-color: var(--verde); }
+.datos button { border: 0; cursor: pointer; justify-self: start; font-family: inherit; }
+.datos button:disabled { opacity: .6; cursor: default; }
+.form-msg { min-height: 1.2em; color: var(--verde); font-weight: 600; }
+.form-msg.error { color: #FDBA74; }
+
+.puente {
+  margin-top: 2.5rem; border: 1.5px solid var(--line); border-radius: 18px; padding: 1.4rem 1.25rem;
+  display: grid; gap: .5rem;
+}
+.puente h2 { font-size: 1.2rem; font-weight: 600; }
+.puente p { color: var(--muted); }
+.puente a { color: var(--azul); font-weight: 600; }
+
+.nota-final { font-size: .85rem; color: var(--muted); margin-top: 2rem; }
+
+
+/* ── Método y «Nunca diga» ── */
+.metodo h2, .nunca h2 { font-size: 1.45rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; margin-bottom: .9rem; }
+.metodo ol { list-style: none; counter-reset: m; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.metodo li { counter-increment: m; border-top: 3px solid var(--verde); padding-top: .7rem; }
+.metodo li strong { display: block; }
+.metodo li strong::before { content: counter(m) ". "; }
+.metodo li span { color: var(--muted); font-size: .93rem; }
+.nunca > p { color: var(--muted); margin-bottom: 1rem; }
+.tabla { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.fila { display: grid; grid-template-columns: 11rem 1fr; border-top: 1px solid var(--line); }
+.fila:first-child { border-top: 0; }
+.fila .no { padding: .8rem 1rem; background: rgba(214,100,124,0.08); color: var(--rosa); font-weight: 600; font-size: .95rem; text-decoration: line-through; text-decoration-thickness: 1px; }
+.fila .si { padding: .8rem 1rem; font-size: .95rem; }
+.fila.titulos .no, .fila.titulos .si { text-decoration: none; font-size: .85rem; font-weight: 600; color: var(--muted); background: var(--surface); padding: .55rem 1rem; }
+@media (max-width: 560px) {
+  .metodo ol { grid-template-columns: 1fr; }
+  .fila { grid-template-columns: 1fr; }
+  .fila.titulos { display: none; }
+  .fila .no { padding-bottom: .4rem; }
+}
+
+
+/* ── Tabla de tiempos ── */
+@media (min-width: 761px) {
+  .tiempos .t-wrap { width: min(1040px, calc(100vw - 2.5rem)); position: relative; left: 50%; transform: translateX(-50%); }
+}
+.tiempos h2 { font-size: 1.45rem; font-weight: 600; letter-spacing: -0.01em; line-height: 1.2; margin-bottom: .6rem; }
+.tiempos > p { color: var(--muted); margin-bottom: 1rem; }
+.t-wrap { border: 1px solid var(--line); border-radius: 14px; overflow-x: auto; }
+.t-tabla { width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 640px; }
+.t-tabla th, .t-tabla td { text-align: left; vertical-align: top; padding: .7rem .8rem; border-top: 1px solid var(--line); }
+.t-tabla thead th { border-top: 0; background: var(--surface); color: var(--muted); font-size: .82rem; font-weight: 600; }
+.t-tabla tbody th { font-weight: 600; white-space: nowrap; }
+.t-tabla tr.clave td, .t-tabla tr.clave th { background: rgba(183,229,155,0.18); }
+.t-tabla .must { font-weight: 700; }
+@media (max-width: 560px) {
+  .t-wrap { border: 0; overflow: visible; }
+  .t-tabla { min-width: 0; }
+  .t-tabla thead { display: none; }
+  .t-tabla, .t-tabla tbody, .t-tabla tr, .t-tabla th, .t-tabla td { display: block; }
+  .t-tabla tr { border: 1px solid var(--line); border-radius: 14px; margin-bottom: .75rem; overflow: hidden; }
+  .t-tabla tbody th { background: var(--surface); border-top: 0; font-size: 1rem; }
+  .t-tabla td { display: grid; grid-template-columns: 8.5rem 1fr; gap: .6rem; }
+  .t-tabla td::before { content: attr(data-l); color: var(--muted); font-size: .82rem; }
+  .t-tabla tr.clave th { background: rgba(183,229,155,0.35); }
+}
+
+
+/* ── Desplegables ── */
+details > summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::after {
+  content: "+"; flex-shrink: 0; width: 2rem; height: 2rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--line); font-weight: 600; font-size: 1.15rem; color: var(--text);
+}
+details[open] > summary::after { content: "−"; }
+details > summary:focus-visible { outline: 3px solid var(--azul); outline-offset: 4px; border-radius: 8px; }
+.extras { margin-top: 2.5rem; border-top: 1px solid var(--line); }
+.extra { border-bottom: 1px solid var(--line); padding: 1.1rem 0; margin-top: 0 !important; }
+.extra summary h2 { margin: 0 !important; font-size: 1.2rem !important; }
+.extra[open] summary { margin-bottom: 1rem; }
+
+a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+
+@media (max-width: 560px) {
+  .campos { grid-template-columns: 1fr; }
+  .etapa { padding-left: 0; }
+  .etapa::before { display: none; }
+  .etapa-num { position: static; margin-bottom: .6rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .recien .item { animation: aparece .5s ease; }
+  @keyframes aparece { from { filter: blur(5px); } to { filter: blur(0); } }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="logo-link" href="https://calculadora.vettta.com/" aria-label="vettta, ir a la calculadora"><img class="logo" src="data:image/png;base64,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" alt="vettta" width="129" height="40"></a>
+    <h1>Mensajes que se convierten en citas</h1>
+    <p>Qué responder en cada etapa de la conversación con un paciente por WhatsApp, desde el primer «hola» hasta el seguimiento. Para que quien atiende tu clínica cierre con un horario y no solo con información.</p>
+  </div>
+  <svg class="ridge" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true">
+    <polygon fill="var(--verde)" points="0,70 0,30 180,0 330,34 520,2 690,30 860,8 1040,36 1200,12 1200,70"/>
+    <polygon fill="var(--bg)" points="0,70 0,48 140,18 260,44 410,6 560,40 700,22 820,46 980,10 1110,38 1200,26 1200,70"/>
+  </svg>
+</header>
+
+<main>
+  <section class="datos-clinica" aria-labelledby="dc-titulo">
+    <h2 id="dc-titulo">Personaliza las respuestas con los datos de tu clínica</h2>
+    <p>Se escriben solos en todas las respuestas. Lo que dejes vacío queda marcado en gris para completarlo.</p>
+    <div class="campos">
+      <label>Cómo llaman los pacientes al médico<input id="c-medico" type="text" placeholder="la Dra. López" autocomplete="off"></label>
+      <label>Nombre de quien responde el WhatsApp<input id="c-asistente" type="text" placeholder="Sofía" autocomplete="off"></label>
+      <label class="full">Precio de la consulta<input id="c-precio" type="text" placeholder="Q500" autocomplete="off"></label>
+      <label class="full">Dirección de la clínica<input id="c-direccion" type="text" placeholder="Edificio, número de clínica, zona" autocomplete="off"></label>
+      <label class="full">Horario de atención por WhatsApp<input id="c-horario" type="text" placeholder="lunes a viernes de 8:00 a 18:00" autocomplete="off"></label>
+    </div>
+  </section>
+
+  <nav class="ruta" aria-label="Etapas de la conversación"><ol id="ruta"></ol></nav>
+
+  <div id="etapas"></div>
+
+  <section class="cta datos" id="desbloquear" aria-labelledby="form-titulo">
+    <h2 id="form-titulo">Ve las objeciones, el cierre, el seguimiento y los pacientes que ya te conocen</h2>
+    <p>Déjanos tus datos y se abren aquí mismo las <span id="faltan">0</span> respuestas que faltan: «está caro», «lo voy a pensar», «¿y si no me funciona?», recordatorios, seguimiento según el interés del paciente, reseñas y pacientes que no han vuelto.</p>
+    <form id="form-datos" novalidate>
+      <label>Nombre<input id="f-nombre" type="text" autocomplete="name" required></label>
+      <label>Especialidad<input id="f-especialidad" type="text" required></label>
+      <label>WhatsApp<input id="f-whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="5555 5555" required></label>
+      <label>Correo <span>(opcional)</span><input id="f-correo" type="email" autocomplete="email"></label>
+      <label class="check"><input id="f-acepto" type="checkbox" required> Acepto que me contacten por WhatsApp o correo.</label>
+      <p class="form-msg" id="form-msg" role="status"></p>
+      <button class="cta-btn" type="submit" id="f-enviar">Ver todas las respuestas</button>
+    </form>
+  </section>
+
+  <section class="extras" aria-label="Para profundizar">
+    <details class="extra metodo">
+      <summary><h2>Cada respuesta sigue tres pasos</h2></summary>
+      <ol>
+        <li><strong>Pregunta</strong><span>Antes de dar información, entiende qué le pasa al paciente y qué le preocupa.</span></li>
+        <li><strong>Empatiza</strong><span>Valida lo que siente. El paciente pregunta por el precio, pero busca seguridad.</span></li>
+        <li><strong>Propone una acción</strong><span>Ninguna conversación termina abierta: termina con dos horarios o una pregunta concreta.</span></li>
+      </ol>
+    </details>
+
+    <details class="extra nunca">
+      <summary><h2>Nunca diga, diga mejor</h2></summary>
+      <p>Lo que más resta confianza no es un error de información, sino una respuesta fría o desorganizada.</p>
+      <div class="tabla" id="nunca"></div>
+    </details>
+
+    <details class="extra tiempos">
+      <summary><h2>Cuándo responder y cuándo dar seguimiento</h2></summary>
+      <p>Un mensaje sin seguimiento es un paciente perdido. Estos son los tiempos para cada canal; los de WhatsApp y redes aplican en horario de atención.</p>
+      <div class="t-wrap"><table class="t-tabla" id="tiempos"></table></div>
+    </details>
+  </section>
+
+  <section class="puente" aria-labelledby="puente-titulo">
+    <h2 id="puente-titulo">¿Cuántos mensajes no terminan en cita?</h2>
+    <p>La calculadora de agenda lo calcula con los números de tu clínica, junto con los espacios libres y los seguimientos que no regresan. <a href="https://calculadora.vettta.com/">Abrir la calculadora</a></p>
+  </section>
+
+  <section class="cta" id="cta-agenda" aria-labelledby="agenda-titulo">
+    <h2 id="agenda-titulo">Agenda tu diagnóstico gratuito</h2>
+    <p>Estas respuestas ayudan con los mensajes que ya llegan. En el diagnóstico vemos de dónde vienen y qué encuentran los pacientes antes de escribirte.</p>
+    <ol>
+      <li>Agendas 15 minutos y nos cuentas de tu clínica.</li>
+      <li>Revisamos tu Google, tu Instagram y tus reseñas.</li>
+      <li>Te enviamos un informe con sugerencias y una propuesta.</li>
+    </ol>
+    <a class="cta-btn" id="cta-btn" href="#" target="_blank" rel="noopener">Agendar mi diagnóstico</a>
+    <small>Sin costo y sin compromiso. Solo para médicos.</small>
+  </section>
+
+  <p class="nota-final">Las respuestas son un punto de partida: ajusta el tono a tu clínica. Quien atiende el WhatsApp no debe dar diagnósticos ni indicaciones médicas; esas preguntas se resuelven en consulta.</p>
+</main>
+
+<script>
+/* ─────────────────────────────────────────────
+   CONFIGURACIÓN
+   ───────────────────────────────────────────── */
+var CONFIG = {
+  recurso: 'mensajes',             // así aparece en la columna "recurso" de la hoja
+  calendly: 'https://calendly.com/medicalmedia360/15min',
+  enviarOrigenACalendly: true,     // usa la primera pregunta personalizada (a1)
+  etapasLibres: 2,                 // cuántas etapas se ven sin dejar datos
+  bloquear: true,                  // false = todo abierto, sin formulario
+  metaPixelId: '',
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbydee9sDxGW0Vp8jn3wlY2XNfsQzZgxpal7iOWfgeRqdehQkQZ1HSeOcz-uK_dAkCMWLA/exec'
+};
+
+/* ─────────────────────────────────────────────
+   ETAPAS Y RESPUESTAS
+   {medico} {asistente} {precio} {direccion} {horario} se llenan con los datos de arriba.
+   [texto] queda marcado para completar en cada conversación.
+   ───────────────────────────────────────────── */
+var ETAPAS = [
+  { id: 'primer-contacto', nombre: 'Primer contacto',
+    objetivo: 'Responder en menos de 5 minutos y entender qué necesita el paciente antes de dar precios: preguntar, empatizar y proponer el siguiente paso.',
+    evita: 'responder solo «Buenas, ¿en qué le ayudo?» y esperar.',
+    items: [
+      { titulo: 'Te escriben pidiendo información', dice: 'Buenas, quisiera información',
+        sale: '¡Hola! Soy {asistente}, de la clínica de {medico}. Gracias por escribirnos. Para orientarle mejor, ¿me cuenta qué le motivó a contactarnos hoy y si la cita sería para usted o para otra persona?',
+        porque: 'Presentarse con nombre da confianza. Una pregunta concreta mueve la conversación y te da el contexto para lo que sigue.' },
+      { titulo: 'Antes de dar el precio: entiende su situación', dice: 'Es por [el motivo que te cuenta]',
+        sale: 'Gracias por contarme. Para orientarle mejor: ¿hace cuánto tiempo tiene esta molestia y qué es lo que más le preocupa de su situación?',
+        porque: 'El paciente pide precio, pero lo que busca es seguridad: saber si lo van a entender y si vale la pena. Con estas respuestas sabes qué decirle después.' },
+      { titulo: 'Cuando le cuenta su situación', dice: '[Lo que te cuenta de su molestia]',
+        sale: 'Lo entiendo, muchos pacientes nos buscan por la misma situación. Está en buenas manos: {medico} atiende [patología o motivo de consulta] y en la consulta puede evaluar su caso con calma.\n¿Alguien le recomendó con nosotros o nos encontró por internet?',
+        porque: 'El paciente se siente escuchado. Y saber cómo llegó te dice qué reforzar: la confianza o la autoridad. Anota lo que te cuenta (un viaje, una boda, un embarazo) y pásaselo a {medico} antes de la consulta.' },
+      { titulo: '¿Cómo nos conoció?', dice: 'Me recomendó [nombre de quien lo refirió]',
+        sale: '¡Qué gusto! Gracias por su confianza, y a [nombre de quien lo refirió] también.\n¿Le comparto los horarios que tengo esta semana?',
+        altLabel: 'Si los encontró por internet:',
+        alt: '¡Qué bueno que nos encontró! Si quiere conocer la experiencia de otros pacientes, aquí están nuestras reseñas en Google: [enlace a tus reseñas].\n¿Le comparto los horarios que tengo esta semana?',
+        porque: 'Si viene recomendado, refuerzas la confianza. Si llegó por internet, las reseñas refuerzan la autoridad. Y la clínica sabe de dónde vienen sus pacientes.' },
+      { titulo: '«Quiero hablar con el doctor»', dice: '¿Me puede comunicar con el doctor?',
+        sale: 'Disculpe, {medico} está atendiendo pacientes en este momento. Con gusto le tomo su mensaje y se lo entrego en cuanto termine para que le responda. ¿Me cuenta brevemente de qué se trata?',
+        porque: 'Nunca «no está», «no sé dónde está» ni «no sé cuándo regresa». El paciente percibe orden y sabe que su mensaje llega.' },
+      { titulo: 'Te escriben por Instagram o Facebook', dice: 'Hola, ¿cuánto cuesta la consulta?',
+        sale: '¡Hola! Gracias por escribirnos. Para darle información completa y revisar horarios, ¿le parece si seguimos por WhatsApp? Puede escribirnos al [número de WhatsApp] o dejarnos su número y le escribimos.',
+        porque: 'En redes no se da solo el precio. La cita se cierra por WhatsApp. Responde en menos de 2 horas en horario de atención.' },
+      { titulo: 'Te escriben fuera de horario', nota: 'Respuesta automática de WhatsApp Business.',
+        sale: 'Gracias por escribir a la clínica de {medico}. Nuestro horario de atención por este medio es {horario}. Le responderemos a la brevedad. Gracias por su confianza.\nSi se trata de una emergencia, acuda a la emergencia del hospital más cercano.',
+        porque: 'Se configura una vez. El paciente sabe cuándo esperar respuesta y no queda sin orientación en una urgencia.' }
+    ] },
+
+  { id: 'precio', nombre: 'Precio y valor',
+    objetivo: 'El precio nunca va solo: va con lo que incluye y con un horario disponible.',
+    evita: 'responder solo «Q500.» o mandar el precio sin explicar qué incluye.',
+    items: [
+      { titulo: '«¿Cuánto cuesta la consulta?»', dice: '¿Cuánto cuesta la consulta?',
+        sale: 'La consulta con {medico} tiene un valor de {precio}. Dura [40 minutos]: {medico} evalúa su [patología o motivo de consulta], [revisa sus exámenes anteriores] y usted sale con [un diagnóstico y un plan de tratamiento].\nTengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál le queda mejor?',
+        porque: 'Un precio solo invita a comparar. Con lo que pasa en la consulta y dos horarios, lo siguiente es elegir uno. Cambia lo que está en gris por lo que hace tu consulta distinta.' },
+      { titulo: '«¿Aceptan seguro?»', dice: '¿Aceptan seguro médico?',
+        sale: 'Sí, trabajamos con [aseguradoras con las que trabajas]. Para su cita traiga su carné del seguro y su DPI.\nTengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál le reservo?',
+        altLabel: 'Si no trabajas con aseguradoras:',
+        alt: 'Por el momento no trabajamos directo con aseguradoras. Puede presentar la factura de su consulta a su seguro para solicitar el reembolso.\nTengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál le reservo?',
+        porque: 'Responde lo que preguntó y vuelve a la cita en el mismo mensaje.' },
+      { titulo: 'Preguntan por un tratamiento nuevo', dice: '¿Ya hacen [tratamiento]?',
+        sale: 'Sí, justo acabamos de incorporar [tratamiento] y lo realiza directamente {medico}. [Beneficio concreto: por ejemplo, requiere menos tiempo de recuperación].\nIncluye [lo que incluye: sesión en clínica, indicaciones para casa]. {medico} le explicará cada detalle en su cita y si es adecuado para su caso. ¿Le reservo un espacio?',
+        porque: 'Nunca «es nuevo, no sé mucho». Un beneficio claro, sin sonar a improvisación ni a venta agresiva, y la cita como el lugar para resolver dudas.' }
+    ] },
+
+  { id: 'objeciones', nombre: 'Objeciones',
+    objetivo: 'Detrás de cada objeción hay un miedo: perder dinero, equivocarse, arrepentirse. Escucha, valida la emoción, reencuadra con valor y cierra con opciones.',
+    evita: 'discutir, ridiculizar la duda o decir «ese es el precio».',
+    items: [
+      { titulo: '«Está caro»', dice: 'Uy, está caro',
+        sale: 'Lo entiendo, muchos pacientes lo piensan al inicio. Para explicarle mejor, ¿lo está comparando con otra consulta o con lo que tenía pensado invertir?',
+        altLabel: 'Cuando le cuenta con qué lo compara:',
+        alt: 'Gracias por contarme. La diferencia está en que aquí [la consulta dura 40 minutos], {medico} [revisa sus exámenes anteriores en la misma cita] y [sale con su plan de tratamiento por escrito].\n¿Prefiere que le reserve para esta semana o la próxima?',
+        porque: 'Valida sin discutir, entiende con qué lo compara y reencuadra con lo que el paciente recibe. No se responde igual a «otro médico cobra menos» que a «no me alcanza este mes».' },
+      { titulo: '«Lo voy a pensar»', dice: 'Déjeme pensarlo y le aviso',
+        sale: 'Claro, es una decisión importante. Para ayudarle a decidir, ¿qué le gustaría tener más claro? Puede ser sobre la consulta, el costo o cómo trabaja {medico}; con gusto le aclaro lo que necesite.',
+        porque: '«Lo voy a pensar» casi siempre esconde una duda que no dijo. Preguntar cuál es abre la conversación en lugar de cerrarla.' },
+      { titulo: '«Lo hablo en casa»', dice: 'Lo voy a hablar con mi esposo y le confirmo',
+        sale: 'Claro, es bueno decidirlo juntos. ¿Qué cree que le van a preguntar en casa? Así le envío la información completa para que la vean juntos: [lo que incluye la consulta, precio y horarios disponibles].\nY si les surge alguna duda, me escriben y se la aclaro.',
+        porque: 'Prepara al paciente para la conversación en casa, que es donde realmente se decide.' },
+      { titulo: '«No tengo tiempo»', dice: 'Es que trabajo todo el día',
+        sale: 'Lo entiendo, todos vamos con agendas apretadas. Por eso tenemos [horarios temprano / después de las 6 p. m. / sábados / teleconsulta].\n¿Prefiere en la mañana antes de trabajar o en la tarde al salir de la oficina?',
+        porque: 'Responde con soluciones concretas, no con «pues cuando pueda».' },
+      { titulo: '«Mándeme la información»', dice: 'Mándeme la información y yo le aviso',
+        sale: 'Con mucho gusto se la envío. Para mandarle lo que de verdad le sirve, ¿qué le gustaría saber: el costo, qué incluye la consulta, la experiencia de {medico} o los horarios disponibles?',
+        altLabel: 'Cuando le envías la información:',
+        alt: 'Aquí le dejo [la información]. Para que no se quede sin lugar, puedo reservarle un espacio tentativo mientras la revisa: tengo el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. Si decide no venir, lo cancelamos sin problema.',
+        porque: 'Un PDF genérico casi nunca se lee y el contacto se pierde. Saber qué busca permite enviar lo que le ayuda a decidir.' },
+      { titulo: '«Voy a consultar con otro doctor primero»', dice: 'Voy a ver primero con otro doctor',
+        sale: 'Claro, es normal comparar opciones. ¿Qué es lo más importante para usted al elegir médico? Así le cuento cómo trabaja {medico} en ese punto.',
+        altLabel: 'Cuando le cuenta qué busca:',
+        alt: 'Gracias por contarme. En eso, la primera consulta con {medico} incluye [lo que responde a lo que busca: por ejemplo, revisión de sus exámenes con ultrasonido en la misma cita].\n¿Quiere que le reserve mientras tanto un espacio para esta semana?',
+        porque: 'Descubre qué valora el paciente y responde solo sobre eso, sin hablar de otros médicos.' },
+      { titulo: '«¿Y si no me funciona?»', dice: '¿Y si el tratamiento no me funciona?',
+        sale: 'Es normal tener esa duda. Por eso {medico} [da seguimiento con una cita de control para revisar su evolución].\nLo mejor es que lo valore en persona y le explique qué esperar en su caso. ¿Prefiere mañana o pasado mañana?',
+        porque: 'Es miedo al resultado. Se responde con seguridad sobre el proceso, nunca con promesas sobre el resultado.' }
+    ] },
+
+  { id: 'cierre', nombre: 'Cierre y confirmación',
+    objetivo: 'Proponer horarios concretos, con urgencia real y sin presión, y dejar la cita clara y confirmada.',
+    evita: 'preguntar «¿qué día le queda?» sin ofrecer horarios.',
+    items: [
+      { titulo: '«¿Tienen espacio esta semana?»', dice: '¿Tienen espacio esta semana?',
+        sale: 'Sí, esta semana aún me quedan un par de espacios: el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál prefiere?\nSi ninguno le funciona, dígame qué días le quedan mejor y le busco opción.',
+        porque: 'Urgencia real, sin manipulación: úsalo solo cuando de verdad quedan pocos espacios.' },
+      { titulo: 'Cuando el paciente duda en reservar', dice: 'No sé si ese día voy a poder',
+        sale: 'Si quiere, le reservo ya el horario. Siempre puede reprogramar si le surge algo.',
+        porque: 'Quita el miedo a comprometerse. Reservar no lo obliga a nada.' },
+      { titulo: 'Cuando el paciente elige un horario', dice: 'El jueves en la tarde está bien',
+        sale: 'Perfecto, queda confirmada su cita con {medico} el [día] a las [4:00 p. m.] en {direccion}. Un día antes le enviaremos un recordatorio.\nGracias por confiar en nosotros. {medico} le espera con gusto.',
+        porque: 'Fecha, hora y lugar en un solo mensaje, y una despedida que cierra con calidez.' },
+      { titulo: '«¿Dónde quedan?»', dice: '¿Dónde queda la clínica?',
+        sale: 'Estamos en {direccion}. Aquí la ubicación: [enlace de Google Maps].\n[Dónde estacionarse o cómo llegar].',
+        porque: 'El enlace y las indicaciones evitan dudas el día de la cita.' },
+      { titulo: 'Recordatorio un día antes', nota: 'La cita es mañana.',
+        sale: 'Buenas tardes, [nombre del paciente]. Le recordamos su cita con {medico} mañana [día] a las [4:00 p. m.] en {direccion}.\n¿Nos confirma su asistencia respondiendo SÍ? Si no puede venir, avísenos y le buscamos otro horario.',
+        porque: 'Si avisa que no viene, ese espacio todavía se le puede ofrecer a otra persona.' },
+      { titulo: 'Recordatorio dos horas antes', nota: 'La cita es hoy.',
+        sale: 'Hola, [nombre del paciente]. Le esperamos hoy a las [4:00 p. m.] con {medico} en {direccion}. Si necesita indicaciones para llegar, con gusto se las envío.',
+        porque: 'Un segundo recordatorio el mismo día, cuando el paciente organiza su tarde.' },
+      { titulo: '{medico} viene con retraso', nota: 'Avisa antes de que el paciente salga de su casa.',
+        sale: 'Buenas tardes, [nombre del paciente]. Le aviso que {medico} tiene un retraso de aproximadamente [30 minutos]. Si prefiere, puede llegar un poco más tarde o le buscamos otro horario. Disculpe el inconveniente.',
+        porque: 'Avisar a tiempo protege la confianza. Nadie se molesta tanto por el retraso como por enterarse en la sala de espera.' },
+      { titulo: '«Ya no voy a poder ir»', dice: 'Disculpe, ya no voy a poder llegar mañana',
+        sale: 'Gracias por avisarnos, [nombre del paciente]. Tengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál le funciona mejor?',
+        porque: 'Reagendar siempre con dos opciones cerradas, en el mismo mensaje.' },
+      { titulo: 'Se liberó un espacio', nota: 'Alguien canceló y tienes pacientes esperando cita.',
+        sale: 'Hola, [nombre del paciente]. Se liberó un espacio con {medico} el [día] a las [4:00 p. m.]. Como usted buscaba cita antes, quería ofrecérselo primero. ¿Se lo reservo?',
+        porque: 'Un hueco en la agenda se llena con quien ya estaba esperando.' }
+    ] },
+
+  { id: 'seguimiento', nombre: 'Seguimiento',
+    objetivo: 'La mayoría no agenda en el primer mensaje. El tiempo del seguimiento depende de qué tan interesado está el paciente.',
+    evita: 'dar por perdido al paciente que no contestó u olvidar a quien escribió por redes.',
+    items: [
+      { titulo: 'Caliente: en menos de 12 horas', nota: 'Preguntó por disponibilidad inmediata y no cerró.',
+        sale: 'Hola, [nombre del paciente]. Podemos reservarle hoy mismo en la tarde o mañana temprano. ¿Qué le queda mejor?',
+        porque: 'Quien pregunta por disponibilidad inmediata tiene urgencia. Esperar un día es perderlo.' },
+      { titulo: 'A las 24 horas, si no respondió', nota: 'Ayer preguntó por una cita y no contestó.',
+        sale: 'Buenos días, [nombre del paciente]. Ayer nos escribió por una cita con {medico}. ¿Quiere que le reserve un espacio esta semana? Tengo el [día] a las [10:00 a. m.] o a las [4:00 p. m.].',
+        porque: 'Retoma la conversación cuando el paciente todavía recuerda por qué escribió.' },
+      { titulo: 'Tibio: a las 48 horas', nota: 'Preguntó precio y detalles, y lo iba a hablar en casa.',
+        sale: 'Hola, [nombre del paciente]. ¿Tuvo oportunidad de hablarlo con su familia? Esta semana aún tengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.].',
+        porque: 'Retoma justo la conversación que quedó pendiente.' },
+      { titulo: 'A las 72 horas, último mensaje', nota: 'Sigue sin responder.',
+        sale: 'Hola, [nombre del paciente]. Solo para confirmar si desea que le agende. Esta semana aún tengo espacio el [día] a las [10:00 a. m.] o a las [4:00 p. m.].\nSi prefiere dejarlo para más adelante, me avisa y no le vuelvo a escribir.',
+        porque: 'Cierra el seguimiento con respeto. El paciente decide y la clínica no insiste más.' },
+      { titulo: 'Frío: a los 7 días', nota: 'Pidió información sin urgencia.',
+        sale: 'Hola, [nombre del paciente]. Hace unos días le enviamos información sobre [tema que consultó]. ¿Le quedó alguna duda? Si quiere agendar, con gusto le comparto los horarios disponibles.',
+        porque: 'Sin urgencia no hay que presionar, pero tampoco olvidarlo.' },
+      { titulo: 'Escribió por redes y no siguió', nota: 'Dejó un mensaje en Instagram o Facebook hace un día.',
+        sale: 'Hola, le escribo para darle seguimiento al mensaje que nos dejó en [Instagram o Facebook]. ¿Quiere que le reserve un espacio esta semana?',
+        porque: 'Los mensajes de redes son los que más se olvidan.' },
+      { titulo: 'Visitó la clínica y no agendó', nota: 'Pasó a recepción a preguntar. Registraste su número.',
+        sale: 'Hola, [nombre del paciente]. Gracias por visitarnos ayer. ¿Quiere que le reserve la cita para esta semana? Tengo el [día] a las [10:00 a. m.] o a las [4:00 p. m.].',
+        porque: 'Quien se tomó el tiempo de ir tiene interés real.' }
+    ] },
+
+  { id: 'pacientes', nombre: 'Pacientes que ya te conocen',
+    objetivo: 'Cada paciente que ya vino o preguntó es parte de la clínica. Cuidarlo es la forma más directa de que regrese y recomiende.',
+    evita: 'escribir solo para vender o dar indicaciones médicas por WhatsApp.',
+    items: [
+      { titulo: 'Después de la consulta', nota: 'Un día después de la cita.',
+        sale: 'Hola, [nombre del paciente]. Gracias por su visita a la clínica de {medico}. ¿Cómo se sintió con la atención? [Le recuerdo que su próxima cita es el (día)].',
+        porque: 'Muestra interés y detecta una molestia antes de que llegue a una reseña en Google.' },
+      { titulo: 'Si responde contento', dice: 'Muy bien, gracias. Me gustó mucho',
+        sale: '¡Qué gusto leerle! Si quiere ayudar a otros pacientes a encontrarnos, puede dejarnos una reseña aquí: [enlace a tus reseñas]. Gracias por su confianza.',
+        altLabel: 'Para invitar a recomendar:',
+        alt: 'Y si alguien de su familia o amigos necesita [especialidad], con gusto le atendemos. [Beneficio por recomendación, si la clínica lo tiene].',
+        porque: 'El mejor momento para pedir una reseña o una recomendación es cuando el paciente acaba de decir que le fue bien.' },
+      { titulo: 'Si responde con una queja', dice: 'La verdad esperé mucho',
+        sale: 'Entiendo su molestia y le agradezco que nos lo diga. ¿Me cuenta qué pasó? Se lo comunico a {medico} y le doy seguimiento.',
+        porque: 'Escucha, valida y deriva. Después confirma con el paciente que su queja fue atendida.' },
+      { titulo: 'Paciente que no vuelve hace 6 meses o más', nota: 'Tiene un control pendiente.',
+        sale: 'Buenos días, [nombre del paciente]. Le escribe {asistente}, de la clínica de {medico}. Su última visita fue en [mes] y {medico} recomienda control cada [tiempo]. ¿Quiere que le agende su revisión? Tengo el [día] a las [10:00 a. m.] o a las [4:00 p. m.].',
+        porque: 'Un recordatorio de lo que el médico indicó, no una promoción.' },
+      { titulo: 'Tratamiento sin terminar', nota: 'Inició un tratamiento y no volvió.',
+        sale: 'Hola, [nombre del paciente]. Usted inició [tratamiento] y aún falta completar [la parte pendiente]. ¿Prefiere que le reserve el [día] a las [10:00 a. m.] o el [día] a las [4:00 p. m.]?',
+        porque: 'Completar lo que ya empezó es la decisión más fácil de tomar.' },
+      { titulo: 'Preguntó hace meses y nunca vino', nota: 'Tienes una novedad que le puede interesar.',
+        sale: 'Hola, [nombre del paciente]. Hace un tiempo nos consultó por [tema]. Queremos contarle que ahora tenemos [novedad o beneficio]. ¿Le comparto los horarios de esta semana?',
+        porque: 'Una razón nueva para escribir, no el mismo mensaje de antes.' },
+      { titulo: '«Ya me atendí en otro lugar»', dice: 'Ya me atendí con otro médico',
+        sale: 'Qué bueno, lo importante es que esté bien cuidado. Solo como información, ahora contamos con [novedad o servicio]. Si quiere, le envío los detalles para que lo evalúe con calma.',
+        porque: 'Sin reclamos. La puerta queda abierta.' },
+      { titulo: '«Ya no estoy interesado»', dice: 'Ya no me interesa, gracias',
+        sale: 'Lo comprendo. ¿Prefiere que le escribamos en seis meses por si quiere retomarlo, o que no le volvamos a contactar?',
+        porque: 'Le da el control al paciente. Si pide que no le escriban, se respeta y se anota.' }
+    ] }
+];
+
+var CAMPOS = {
+  medico:    { id: 'c-medico',    vacio: 'nombre del médico' },
+  asistente: { id: 'c-asistente', vacio: 'tu nombre' },
+  precio:    { id: 'c-precio',    vacio: 'precio' },
+  direccion: { id: 'c-direccion', vacio: 'dirección' },
+  horario:   { id: 'c-horario',   vacio: 'horario' }
+};
+
+
+var TIEMPOS = {
+  columnas: ['Primera respuesta', 'Si no responde', 'Segundo intento', 'Recordatorios de cita', 'Para reagendar'],
+  filas: [
+    ['WhatsApp', 'En menos de 5 minutos', '24 horas', '72 horas', '24 horas antes y 2 horas antes', 'Ofrecer 2 opciones cerradas'],
+    ['Redes sociales', 'En menos de 2 horas', '24 horas', '72 horas', 'Después de pasar a WhatsApp', 'Cerrar en WhatsApp con 2 opciones'],
+    ['Llamada', 'Inmediata', 'Volver a llamar en 24 horas', 'Tibio: 48 horas · Caliente: el mismo día', '24 horas antes', '«¿Prefiere mañana o pasado?»'],
+    ['Correo', 'En menos de 12 horas', 'Recordatorio a las 48 horas', 'A los 5 días, con información de valor', '24 horas antes', 'Enlace directo para reagendar'],
+    ['Visita a recepción', 'Registrar sus datos de inmediato', 'WhatsApp o llamada en 24 horas', '72 horas', '24 horas antes y 2 horas antes', 'Confirmar la cita tentativa']
+  ]
+};
+
+var NUNCA = [
+  ['«Q500.»', 'La consulta con {medico} tiene un valor de {precio}. Dura [40 minutos] y sale con [su plan de tratamiento]. ¿Le reservo en la mañana o en la tarde?'],
+  ['«Ese es el precio.»', 'Lo entiendo, muchos pacientes lo piensan al inicio. ¿Lo está comparando con otra consulta? Así le explico qué incluye.'],
+  ['«Él no está.»', 'Disculpe, {medico} no está disponible ahora. Si lo desea, le tomo su mensaje para que le responda.'],
+  ['«No sé dónde se encuentra.»', '{medico} está atendiendo en este momento. ¿Prefiere que le ayude yo o le dejo su mensaje para que le responda?'],
+  ['«No sé cuándo regresa.»', '{medico} estará atendiendo pacientes la mayor parte del día, pero con gusto le tomo su mensaje y se lo entrego en cuanto termine.'],
+  ['«Es nuevo, no sé mucho.»', 'Sí, acabamos de incorporarlo y lo realiza directamente {medico}. Incluye [beneficio concreto] y en su cita le explicará los detalles.'],
+  ['«Pues cuando pueda.»', '¿Le queda mejor en la mañana antes de trabajar o en la tarde al salir de la oficina?'],
+  ['«¿Qué día le queda?»', 'Tengo espacio el martes a las [10:00 a. m.] o a las [4:00 p. m.]. ¿Cuál prefiere?']
+];
+
+
+/* ── Utilidades ── */
+function $(id) { return document.getElementById(id); }
+function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+function guardar(k, v) { try { localStorage.setItem('vettta-mensajes-' + k, v); } catch (e) {} }
+function leer(k) { try { return localStorage.getItem('vettta-mensajes-' + k); } catch (e) { return null; } }
+
+/* ── Pixel de Meta ── */
+if (CONFIG.metaPixelId) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.metaPixelId);
+  fbq('track', 'PageView');
+}
+function track(evento, custom) {
+  if (!window.fbq) return;
+  if (custom) fbq('trackCustom', evento); else fbq('track', evento);
+}
+
+/* ── UTM del anuncio ── */
+var utm = (function () {
+  var q = new URLSearchParams(location.search), out = [];
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function (k) {
+    if (q.get(k)) out.push(k + '=' + encodeURIComponent(q.get(k)));
+  });
+  return out.join('&');
+})();
+
+/* ── Datos de la clínica ── */
+function valores() {
+  var v = {};
+  Object.keys(CAMPOS).forEach(function (k) { v[k] = $(CAMPOS[k].id).value.trim(); });
+  return v;
+}
+/* Rellena los datos y corrige la gramática alrededor del nombre del médico:
+   «la Dra. López» → «La Dra. López» al inicio de frase; «de el Dr.» → «del Dr.»; «a el Dr.» → «al Dr.» */
+var A = '\u0001', B = '\u0002', H1 = '\u0003', H2 = '\u0004';
+function rellenar(texto, v) {
+  var t = String(texto).replace(/\{([a-z]+)\}/g, function (_, k) {
+    if (!CAMPOS[k]) return _;
+    return v[k] ? A + v[k] + B : H1 + CAMPOS[k].vacio + H2;
+  });
+  t = t.replace(/\[([^\]]+)\]/g, H1 + '$1' + H2);
+  t = t.replace(/\bde \u0001el /gi, 'del ' + A).replace(/(^|[\s(]|¿|¡)a \u0001el /gi, '$1al ' + A);
+  t = t.replace(/(^|[.!?]\s+|\n)\u0001(la|el) /g, function (_, pre, art) { return pre + A + art.charAt(0).toUpperCase() + art.slice(1) + ' '; });
+  t = t.replace(/(^|[.!?]\s+|\n)(\u0001|\u0003)([a-záéíóúñ])/g, function (_, pre, mark, c) { return pre + mark + c.toUpperCase(); });
+  return t;
+}
+function aHtml(texto, v) {
+  return esc(rellenar(texto, v))
+    .replace(/\u0001/g, '<span class="lleno">').replace(/\u0002/g, '</span>')
+    .replace(/\u0003/g, '<span class="hueco">').replace(/\u0004/g, '</span>');
+}
+function aTexto(texto, v) {
+  return rellenar(texto, v)
+    .replace(/[\u0001\u0002]/g, '')
+    .replace(/\u0003/g, '[').replace(/\u0004/g, ']');
+}
+
+/* ── Dibujo ── */
+// Para revisar sin llenar el formulario: mensajes.vettta.com/?revisar
+var abierto = !CONFIG.bloquear || leer('abierto') === '1' || /[?&]revisar\b/.test(location.search);
+
+function dibujar() {
+  var v = valores(), html = '', ruta = '';
+  ETAPAS.forEach(function (e, ei) {
+    var bloq = !abierto && ei >= CONFIG.etapasLibres;
+    ruta += '<li><a href="#' + (bloq ? 'desbloquear' : e.id) + '" data-etapa="' + e.id + '"' + (bloq ? ' class="bloq"' : '') + '><span>' + (ei + 1) + '</span>' + esc(e.nombre) + '</a></li>';
+    if (bloq && ei > CONFIG.etapasLibres) return; // solo una etapa bloqueada se ve como adelanto
+    var items = e.items.map(function (it, ii) {
+      var dice = it.dice ? '<p class="dice">El paciente escribe <q>' + aHtml(it.dice, v) + '</q></p>'
+                         : '<p class="dice">' + esc(it.nota) + '</p>';
+      var resp = '<div class="respuesta">' + aHtml(it.sale, v) + '</div>';
+      var botones = '<button class="copiar" type="button" data-e="' + ei + '" data-i="' + ii + '" data-k="sale">Copiar</button>';
+      if (it.alt) {
+        resp += '<p class="alt-label">' + esc(it.altLabel) + '</p><div class="respuesta">' + aHtml(it.alt, v) + '</div>';
+        botones = '<button class="copiar" type="button" data-e="' + ei + '" data-i="' + ii + '" data-k="sale">Copiar primera</button>' +
+                  '<button class="copiar" type="button" data-e="' + ei + '" data-i="' + ii + '" data-k="alt">Copiar segunda</button>';
+      }
+      return '<div class="item"><h3>' + aHtml(it.titulo, v) + '</h3>' + dice + resp +
+        '<div class="pie"><p class="porque">' + esc(it.porque) + '</p><div class="botones">' + botones + '</div></div></div>';
+    }).join('');
+    html += '<section class="etapa' + (bloq ? ' bloqueada' : '') + '" id="' + e.id + '" aria-labelledby="t-' + e.id + '"' + (bloq ? ' aria-hidden="true"' : '') + '>' +
+      '<div class="etapa-num" aria-hidden="true">' + (ei + 1) + '</div>' +
+      '<h2 id="t-' + e.id + '">' + esc(e.nombre) + '</h2>' +
+      '<p class="objetivo">' + esc(e.objetivo) + '</p>' +
+      '<p class="evita"><strong>Evita</strong> ' + esc(e.evita) + '</p>' +
+      items + '</section>';
+  });
+  $('etapas').innerHTML = html;
+  $('nunca').innerHTML = '<div class="fila titulos" aria-hidden="true"><div class="no">Nunca diga</div><div class="si">Diga mejor</div></div>' +
+    NUNCA.map(function (f) { return '<div class="fila"><div class="no">' + esc(f[0]) + '</div><div class="si">' + aHtml(f[1], v) + '</div></div>'; }).join('');
+  var faltan = 0; ETAPAS.forEach(function (e, i) { if (i >= CONFIG.etapasLibres) faltan += e.items.length; });
+  $('faltan').textContent = faltan;
+  $('ruta').innerHTML = ruta;
+  $('desbloquear').hidden = abierto;
+  document.querySelectorAll('.bloqueada button').forEach(function (el) { el.tabIndex = -1; });
+  observar();
+}
+
+/* Marca en la ruta la etapa que se está leyendo */
+var obs;
+function observar() {
+  if (!('IntersectionObserver' in window)) return;
+  if (obs) obs.disconnect();
+  obs = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      document.querySelectorAll('.ruta a').forEach(function (a) {
+        a.classList.toggle('activa', a.dataset.etapa === en.target.id);
+        if (a.dataset.etapa === en.target.id && a.scrollIntoView) a.parentNode.parentNode.scrollLeft = a.offsetLeft - 16;
+      });
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  document.querySelectorAll('.etapa').forEach(function (s) { obs.observe(s); });
+}
+
+/* ── Copiar ── */
+function copiar(texto, btn) {
+  var listo = function () {
+    var antes = btn.textContent;
+    btn.classList.add('ok'); btn.textContent = 'Copiada';
+    setTimeout(function () { btn.classList.remove('ok'); btn.textContent = antes; }, 1600);
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(texto).then(listo, function () { copiarViejo(texto); listo(); });
+  } else { copiarViejo(texto); listo(); }
+}
+function copiarViejo(texto) {
+  var ta = document.createElement('textarea');
+  ta.value = texto; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch (e) {}
+  document.body.removeChild(ta);
+}
+$('etapas').addEventListener('click', function (e) {
+  var btn = e.target.closest('.copiar');
+  if (!btn) return;
+  var it = ETAPAS[+btn.dataset.e].items[+btn.dataset.i];
+  copiar(aTexto(it[btn.dataset.k], valores()), btn);
+  track('CopiarPlantilla', true);
+});
+
+/* Recuerda los datos de la clínica en este navegador */
+Object.keys(CAMPOS).forEach(function (k) {
+  var el = $(CAMPOS[k].id), g = leer(k);
+  if (g) el.value = g;
+  el.addEventListener('input', function () { guardar(k, el.value); dibujar(); });
+});
+
+/* ── Formulario (misma hoja que la calculadora) ── */
+$('form-datos').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var msg = $('form-msg');
+  msg.className = 'form-msg';
+  var nombre = $('f-nombre').value.trim(), esp = $('f-especialidad').value.trim(), wa = $('f-whatsapp').value.trim();
+  if (!nombre || !esp || !wa) { msg.className = 'form-msg error'; msg.textContent = 'Escribe tu nombre, especialidad y WhatsApp.'; return; }
+  if (wa.replace(/\D/g, '').length < 8) { msg.className = 'form-msg error'; msg.textContent = 'Revisa tu número de WhatsApp: debe tener al menos 8 dígitos.'; return; }
+  if (!$('f-acepto').checked) { msg.className = 'form-msg error'; msg.textContent = 'Marca la casilla para que podamos contactarte.'; return; }
+  if (!CONFIG.formEndpoint) { msg.className = 'form-msg error'; msg.textContent = 'Este formulario todavía no está conectado. Escríbenos por nuestras redes mientras tanto.'; return; }
+
+  // Mismas columnas que la calculadora; las de la calculadora van vacías.
+  var datos = {
+    fecha: new Date().toISOString(), nombre: nombre, especialidad: esp, whatsapp: wa, correo: $('f-correo').value.trim(),
+    presupuesto: '', precio: '', capacidad_semana: '', citas_semana: '',
+    seguimientos_ano: '', espacios_libres_mes: '', valor_espacios_libres: '',
+    nuevos_mes: '', seguimientos_indicados: '', no_llegan_de_10: '',
+    mensajes_mes: '', mensajes_agendan: '', utm: utm,
+    recurso: CONFIG.recurso
+  };
+  var btn = $('f-enviar'); btn.disabled = true; btn.textContent = 'Enviando…';
+  fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(datos) })
+    .then(function (r) { return r.text(); })
+    .then(function (t) {
+      if (t.trim() !== 'ok') throw new Error(t);
+      track('Lead');
+      abierto = true; guardar('abierto', '1');
+      dibujar();
+      document.querySelectorAll('.etapa').forEach(function (el, i) { if (i >= CONFIG.etapasLibres) el.classList.add('recien'); });
+      $(ETAPAS[CONFIG.etapasLibres].id).scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    })
+    .catch(function () {
+      btn.disabled = false; btn.textContent = 'Ver todas las respuestas';
+      msg.className = 'form-msg error'; msg.textContent = 'No pudimos enviar tus datos. Revisa tu conexión e inténtalo de nuevo.';
+    });
+});
+
+/* ── Calendly ── */
+(function () {
+  var url = CONFIG.calendly;
+  if (CONFIG.enviarOrigenACalendly) url += (url.indexOf('?') === -1 ? '?' : '&') + 'a1=' + encodeURIComponent('Vino de: plantillas de mensajes (mensajes.vettta.com).');
+  if (utm) url += (url.indexOf('?') === -1 ? '?' : '&') + utm;
+  $('cta-btn').href = url;
+  $('cta-btn').addEventListener('click', function () { track('Schedule'); });
+})();
+
+function dibujarTiempos() {
+  var c = TIEMPOS.columnas;
+  var h = '<thead><tr><th scope="col">Canal</th>' + c.map(function (x) { return '<th scope="col">' + esc(x) + '</th>'; }).join('') + '</tr></thead><tbody>';
+  TIEMPOS.filas.forEach(function (f, i) {
+    h += '<tr' + (i === 0 ? ' class="clave"' : '') + '><th scope="row">' + esc(f[0]) + '</th>' +
+      f.slice(1).map(function (x, j) { return '<td data-l="' + esc(c[j]) + '"' + (j === 0 ? ' class="must"' : '') + '>' + esc(x) + '</td>'; }).join('') + '</tr>';
+  });
+  $('tiempos').innerHTML = h + '</tbody>';
+}
+dibujarTiempos();
+
+dibujar();
+</script>
+</body>
+</html>
